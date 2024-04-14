@@ -6,9 +6,6 @@ repositories {
     mavenCentral()
 }
 
-compileTestJava {
-    options.encoding = 'UTF-8'
-}
 
 dependencies {
     testImplementation(
@@ -16,6 +13,14 @@ dependencies {
             "org.junit.jupiter:junit-jupiter:5.10.1",
             "org.slf4j:slf4j-simple:2.0.12"
     )
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
 }
 
 test {
